@@ -23,8 +23,7 @@ class UserType extends AbstractType
                 'label' => 'Role :'
             ))
             ->add('password')
-            ->add('isVerified')
-        ;
+            ->add('isVerified');
         $builder->get('roles')
         ->addModelTransformer(new CallbackTransformer(
         function ($rolesArray) {

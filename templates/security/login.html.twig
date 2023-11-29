@@ -39,4 +39,9 @@
             Sign in
         </button>
     </form>
+    {% if(app.user!=null) %}
+    <a href="{{ path('app_user_index') }}">Gestion utilisateur</a>
+    {% endif %}
+    <a href="{{ path('app_register') }}">S'inscrire</a>
+
 {% endblock %}
